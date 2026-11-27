@@ -37,3 +37,13 @@ Le chiffrement protège les données enregistrées au repos dans le navigateur. 
 ## À propos de SWE-agent
 
 Le dépôt [SWE-agent](https://github.com/SWE-agent/SWE-agent) décrit un agent de développement qui peut résoudre des problèmes de code et aider à chercher des vulnérabilités. Ce n’est pas une bibliothèque de sécurité à intégrer dans YERI. YERI est livré sans agent ni dépendance externe côté navigateur.
+
+## Mettre à jour une version déjà publiée
+
+1. Télécharge la nouvelle archive `YERI-installation.zip` et décompresse-la.
+2. Dans le dépôt GitHub déjà utilisé, ouvre **Code → Add file → Upload files**.
+3. Téléverse le contenu décompressé à la racine, en remplaçant les anciens fichiers portant les mêmes noms, puis valide **Commit changes** sur `main`. Ne téléverse pas les sauvegardes chiffrées de tes finances.
+4. GitHub Pages republie après le commit ; tu n’as pas besoin de refaire le réglage **Settings → Pages**.
+5. Ferme puis rouvre YERI sur ton téléphone, ou actualise la page. Le service worker mis à jour remplacera le cache précédent.
+
+La mise à jour garde le coffre chiffré déjà enregistré. Pour effacer les anciens exemples et établir ton propre budget, appuie sur la flèche ↻ en haut, confirme la remise à zéro, puis saisis ton revenu et ajoute tes enveloppes (montant libre, même à zéro). Cette remise à zéro efface les opérations et objectifs présents sur cet appareil ; exporte une sauvegarde avant si tu veux les conserver.
